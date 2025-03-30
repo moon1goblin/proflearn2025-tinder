@@ -61,4 +61,4 @@ class Comment(Base):
     updated_ts = Column(DateTime, nullable=False, default=datetime.datetime.now)
     profile_id = Column(Integer, ForeignKey("profile.id"))
 
-    profile = relationship("Profile", back_populates="comments")("Profile", back_populates="comments")
+    profile = relationship("Profile", back_populates="comments")

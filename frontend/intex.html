@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Знакомства ПУ ФФ</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Profcomff.Friends</h1>
+    <p id="app-description">
+      Сервис по подбору <span>профсоюзного друга</span>
+    </p>
+
+    <button type="button" class="create-account">Создать анкету</button>
+
+    <dialog id="account-dialog">
+      <form>
+        <label>
+          Имя
+          <input type="text" id="reg-name" />
+        </label>
+        <label>
+          Возраст
+          <input type="number" id="reg-age" />
+        </label>
+        <label>
+          Интересы
+          <input type="text" id="reg-interests" />
+        </label>
+        <label>
+          Описание
+          <input type="text" id="reg-description" />
+        </label>
+        <label>
+          Контакты
+          <input type="text" id="reg-contacts" />
+        </label>
+      </form>
+    </dialog>
+
+    <form class="filters">
+      <h2>Фильтры</h2>
+      <label>
+        Не младше
+        <input inputmode="number" id="min-age" min="18" max="80" value="18" />
+      </label>
+      <label>
+        Не старше
+        <input inputmode="number" id="max-age" min="18" max="80" value="80" />
+      </label>
+      <label>
+        Пол
+        <select id="gender">
+          <option value="default">Не выбрано</option>
+          <option value="female">Женский</option>
+          <option value="male">Мужской</option>
+        </select>
+      </label>
+      <button type="submit">Применить</button>
+    </form>
+
+    <div class="profiles">
+      <div class="profile">
+        <h3>Иванов Иван</h3>
+        <h4>Мужчина, 30 лет</h4>
+        <p>Интересы: сноуборд, лыжи</p>
+      </div>
+      <div class="profile">
+        <h3>Стас</h3>
+        <h4>Возраст: 20 лет</h4>
+        <p>Интересы: спать</p>
+        <p>Связаться со мной: телега</p>
+      </div>
+      <div class="profile">
+        <h3>Стас</h3>
+        <h4>Возраст: 20 лет</h4>
+        <p>Интересы: спать</p>
+        <p>Связаться со мной: телега</p>
+      </div>
+      <div class="profile">
+        <h3>Стас</h3>
+        <h4>Возраст: 20 лет</h4>
+        <p>Интересы: спать</p>
+        <p>Связаться со мной: телега</p>
+      </div>
+    </div>
+
+    <dialog>
+      <h3>Стас</h3>
+      <h4>Возраст: 20 лет</h4>
+      <p>Интересы: спать</p>
+      <p>Связаться со мной: телега</p>
+      <p>
+        Связаться со мной: <a href="https://t.me/darknesshaseyes">телега</a>
+      </p>
+    </dialog>
+    <script src="./main.js"></script>
+  </body>
+</html>
